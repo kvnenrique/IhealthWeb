@@ -4,38 +4,33 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
-
-<%@ page import="javax.servlet.http.HttpServletRequest" %>
 <html>
     
-    <%@ include file="/WEB-INF/navbar2.html" %>
+<%@ include file="/WEB-INF/navbar.html" %>
     <head>
         <link href="login.css" rel="stylesheet" id="bootstrap-css">
     </head>
     <body>
-        <br>
-        <br>
         
-      
-        
-        
+        <form action="/ihealth_v2/servletLoginCliente" method="post">
         <div class="login-wrap">
-	
-        <!--Para el action hay que agregar el contexto(ruta completa) provista por META-INF/context.xml -->
-        <form action="/ihealth_v2/servletLoginCliente" method="post">  
-            <div class="login-html">
+	<div class="login-html">
 		<input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Ingresar</label>
 		<input id="tab-2" type="radio" name="tab" class="for-pwd"><label for="tab-2" class="tab">Olvide mi contraseña</label>
+                
+                
+                
 		<div class="login-form">
 			<div class="sign-in-htm">
 				<div class="group">
-					<label for="usuario" class="label">Usuario</label>
-					<input name="usuario" id="usuario" type="text" class="input">
+					<label for="user" class="label">Usuario</label>
+					<input id="user" name="usuario" type="text" class="input">
 				</div>
 				<div class="group">
-					<label  for="contrasenia" class="label">Contraseña</label>
-					<input name="contrasenia" id="contrasenia" type="password" class="input" data-type="password">
+					<label for="pass" class="label">Contraseña</label>
+					<input id="pass" name = "contrasenia" type="password" class="input" data-type="password">
 				</div>
+                            
 				<div class="group">
 					<input type="submit" class="button" value="Ingresar">
 				</div>
@@ -52,19 +47,12 @@ and open the template in the editor.
 				<div class="hr"></div>
 			</div>
 		</div>
-            </div>
-        </form>
-        
+                    
+               
+	</div>
         </div>
-        
-        
+            
+        </form>
     </body>
-    <br>
-    <br>
-    <br>
-    <br>
     <%@ include file="/WEB-INF/footer.jsp" %>
-   
-    
-  
 </html>

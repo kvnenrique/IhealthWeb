@@ -7,10 +7,6 @@ and open the template in the editor.
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <html>
-    <head>
-        
-    </head>
-    <body>
         <%@ include file="/WEB-INF/navbar.html" %>
         <br>
         <h2 class="text-info">Bienvenido al portal para pacientes Ihealth</h2>
