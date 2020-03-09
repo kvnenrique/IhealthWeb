@@ -10,5 +10,6 @@ nbproject/
 *.exe
 *.o
 *.so
+*.properties
 
 *.so
